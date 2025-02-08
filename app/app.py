@@ -9,8 +9,8 @@ class MainWidget(QtWidgets.QWidget):
         super().__init__()
 
         # ウィンドウサイズ
-        WIDTH = 600
-        HEIGHT = 400
+        WIDTH = 1000
+        HEIGHT = 800
 
         self.setWindowTitle("PySide LLM UI")
         self.setFixedSize(WIDTH, HEIGHT)
