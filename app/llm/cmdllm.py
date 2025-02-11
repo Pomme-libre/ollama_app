@@ -3,24 +3,6 @@ import ollama
 import time
 
 
-class Model():
-    def __init__(self, text):
-        self.text = text
-        self.model = "deepseek-r1:1.5b"
-
-    def main(self):
-        response = ollama.chat(
-                model = self.model,
-                messages = [
-                    {
-                        "role": "user",
-                        "content": self.text,
-                        }
-                    ]
-                )
-        return response["message"]["content"]
-
-
 def main():
     """/*************  ✨ Codeium Command ⭐  *************/
     Executes a chat request to the ollama service with a predefined user message
@@ -65,7 +47,7 @@ def main():
                 }
             ]
         )
-    
+
     print(response["message"]["content"])
 
 
